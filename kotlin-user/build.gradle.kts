@@ -10,22 +10,24 @@ kotlin {
     isNotJavaBean = false
     javaBean = false
     // doesn't work
-    // assert(methodNotJavaBean)
-    assert(isMethodNotJavaBean())
+    // methodNotJavaBean = false
     // doesn't work
-    // assert(methodJavaBean)
-    assert(getMethodJavaBean())
+    // isMethodNotJavaBean = false
+    setMethodNotJavaBean(false)
+    // doesn't work
+    // methodJavaBean = false
+    setMethodJavaBean(false)
 
     // doesn't work
     // notJavaBeanNullable = false
     isNotJavaBeanNullable = false
     javaBeanNullable = false
     // doesn't work
-    // assert(methodNotJavaBeanNullable)
-    assert(isMethodNotJavaBeanNullable()!!)
+    // methodNotJavaBeanNullable = false
+    setMethodNotJavaBeanNullable(false)
     // doesn't work
-    // assert(methodJavaBeanNullable)
-    assert(getMethodJavaBeanNullable()!!)
+    // methodJavaBeanNullable = false
+    setMethodJavaBeanNullable(false)
 }
 
 java {
@@ -34,10 +36,11 @@ java {
     isNotJavaBean = false
     javaBean = false
     // doesn't work
-    // assert(methodNotJavaBean)
-    assert(isMethodNotJavaBean())
-    assert(methodJavaBean)
-    assert(getMethodJavaBean())
+    // methodNotJavaBean = false
+    isMethodNotJavaBean = false
+    setMethodNotJavaBean(false)
+    methodJavaBean = false
+    setMethodJavaBean(false)
 }
 
 groovy {
@@ -46,8 +49,9 @@ groovy {
     isNotJavaBean = false
     javaBean = false
     // doesn't work
-    // assert(methodNotJavaBean)
-    assert(isMethodNotJavaBean())
-    assert(methodJavaBean)
-    assert(getMethodJavaBean())
+    // methodNotJavaBean = false
+    isMethodNotJavaBean = false
+    setMethodNotJavaBean(false)
+    methodJavaBean = false
+    setMethodJavaBean(false)
 }

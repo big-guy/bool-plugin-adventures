@@ -9,6 +9,8 @@ abstract class GroovyExtension {
     Boolean javaBean = Boolean.TRUE
 
     Boolean isMethodNotJavaBean() { Boolean.TRUE }
+    void setMethodNotJavaBean(Boolean x) { }
 
     Boolean getMethodJavaBean() { Boolean.TRUE }
+    void setMethodJavaBean(Boolean x) { }
 }
