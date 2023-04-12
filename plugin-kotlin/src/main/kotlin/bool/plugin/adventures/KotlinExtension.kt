@@ -8,4 +8,12 @@ abstract class KotlinExtension {
     fun isMethodNotJavaBean(): Boolean = true
 
     fun getMethodJavaBean(): Boolean = true
+
+    var isNotJavaBeanNullable: Boolean? = true
+
+    var javaBeanNullable: Boolean? = true
+
+    fun isMethodNotJavaBeanNullable(): Boolean? = true
+
+    fun getMethodJavaBeanNullable(): Boolean? = true
 }

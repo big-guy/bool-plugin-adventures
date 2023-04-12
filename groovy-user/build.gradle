@@ -13,6 +13,15 @@ kotlin {
     assert isMethodNotJavaBean()
     assert methodJavaBean
     assert getMethodJavaBean()
+
+    notJavaBeanNullable = false
+    // doesn't work
+    // isNotJavaBeanNullable = false
+    javaBeanNullable = false
+    assert methodNotJavaBeanNullable
+    assert isMethodNotJavaBeanNullable()
+    assert methodJavaBeanNullable
+    assert getMethodJavaBeanNullable()
 }
 
 java {
